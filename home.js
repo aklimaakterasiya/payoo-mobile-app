@@ -6,7 +6,7 @@ document.getElementById("add-money-btn").addEventListener("click", function(e){
     const pin = document.getElementById("add-pin").value
     const AvailableBalance = document.getElementById("Available-balance").innerText
     console.log(AvailableBalance)
-    const totalNewAvailableBalance = amount + AvailableBalance
+    const totalNewAvailableBalance = parseInt(amount) + parseInt(AvailableBalance)
 
     document.getElementById("Available-balance").innerText = totalNewAvailableBalance
 })
